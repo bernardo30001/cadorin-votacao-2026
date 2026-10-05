@@ -1,0 +1,62 @@
+{
+  "consultaEm": "2026-10-05",
+  "fonte": "Tribunal Superior Eleitoral – divulgação oficial 2026",
+  "pleito": 3220,
+  "eleicao": 6259,
+  "cargo": 7,
+  "candidato": 30000,
+  "sequencialCandidato": "240002535461",
+  "fontes": [
+    {
+      "tipo": "documentacao",
+      "url": "https://www.tse.jus.br/eleicoes/informacoes-tecnicas-sobre-a-divulgacao-de-resultados"
+    },
+    {
+      "tipo": "configuracao-eleicoes",
+      "url": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json"
+    },
+    {
+      "tipo": "configuracao-municipios",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/config/mun-e006259-cm.json"
+    },
+    {
+      "tipo": "configuracao-secoes",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/arquivo-urna/3220/config/sc/sc-p003220-cs.json"
+    },
+    {
+      "tipo": "totalizacao-estadual",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/sc/sc-c0007-e006259-u.json"
+    },
+    {
+      "tipo": "totalizacao-Joinville",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/sc/sc81795-c0007-e006259-u.json"
+    }
+  ],
+  "metodologia": {
+    "votosMunicipios": "Extraídos do campo vap da candidatura30000 no resultado unificado municipal, eleição6259, cargo7. Soma municípios conferida com totalização estadual22.776.",
+    "percentualValidos": "votosCandidato / vv ×100; vv = votos nominais válidos + votos de legenda válidos.",
+    "percentualTse": "Campo pvapn oficial, que neste resultado usa vvc como denominador. vvc inclui votos anulados sub judice; não é idêntico a vv.",
+    "bairros": "Agregação de votos das seções pelo bairro cadastrado do local de votação no eleitorado2026. Não identifica bairro de residência do eleitor. Seções agregadas são contadas somente via BU da seção principal.",
+    "boletins": "Arquivos BU cujo hash possui estado Totalizado no índice auxiliar oficial. Decodificados ASN.1 BER/DER; validação da fase oficial, identidade municipal/zona/seção, soma por seção e reconciliação com resultado municipal."
+  },
+  "validacao": {
+    "boletinsTotalizados": 17326,
+    "municipiosConferidos": 295,
+    "municipiosSemDiferencas": 295,
+    "errosDeLeitura": 0,
+    "totalVotosCadorin": 22776,
+    "camposConferidos": [
+      "cada candidato individualmente",
+      "nominais",
+      "legenda",
+      "válidos",
+      "sub judice",
+      "brancos",
+      "nulos",
+      "nulos técnicos",
+      "eleitores aptos",
+      "comparecimento",
+      "seções"
+    ]
+  }
+}
