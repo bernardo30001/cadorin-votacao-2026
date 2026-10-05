@@ -1,5 +1,7 @@
 # Cadorin · Votação 2026
 
+**Acessar o dashboard:** https://bernardo30001.github.io/cadorin-votacao-2026/
+
 Dashboard descritivo dos resultados oficiais do TSE para deputado estadual em Santa Catarina, primeiro turno de 2026. Consulta em 5 de outubro de 2026.
 
 ## Cobertura
@@ -23,3 +25,7 @@ O painel contém dados estáticos, sem atualização automática. As fontes ofic
 `python3 scripts/validate_data.py`
 
 `node --check dist/app.js`
+
+## Publicação
+
+O GitHub Pages publica o conteúdo de `dist/` automaticamente após atualizações na branch `main`. O processo também pode ser iniciado manualmente em Actions, no fluxo “Publicar dashboard no GitHub Pages”.
