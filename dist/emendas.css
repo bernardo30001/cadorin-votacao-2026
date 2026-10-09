@@ -34,5 +34,25 @@
 .emenda-city-summary strong{display:block;font-size:27px;letter-spacing:-.7px;margin-top:5px}
 .emenda-city-summary p{margin:5px 0 0}
 .emenda-view .panel-head .text-link{flex-shrink:0}
+.emenda-view .emenda-overview-metrics{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:20px}
+#main[data-view="emendas"] .statusline{display:none}
+#main[data-view="emendas"] .page-heading{margin-bottom:24px}
+.emenda-view .emenda-city-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.emenda-main-controls{border-bottom:1px solid var(--line);align-items:flex-end}
+.emenda-main-controls .emenda-search-field{flex:1;min-width:180px}
+.emenda-main-controls .emenda-field{min-width:160px}
+.emenda-details{background:#fff;border:1px solid var(--line);border-radius:8px;margin:14px 0;color:var(--muted);font-size:13px}
+.emenda-details>summary{padding:14px 20px;cursor:pointer;color:var(--ink);font-weight:600}
+.emenda-details-body{padding:0 20px 17px;line-height:1.7}
+.emenda-details-body>p{margin:8px 0}
+.emenda-details-body .emenda-source{margin:8px 0 0}
+.emenda-details-body .emenda-payment-summary{margin:5px 0 0;border:0}
+.emenda-details-body>.panel{margin:4px 0 0}
+.emenda-filters{font-size:13px;flex:0 0 auto;min-width:110px}
+.emenda-filters>summary{cursor:pointer;min-height:43px;display:list-item;align-content:center;color:var(--muted);padding:10px 4px}
+.emenda-filters[open]{flex-basis:100%}
+.emenda-extra-controls{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:8px 0}
+.emenda-extra-controls .emenda-checkbox{flex-basis:auto}
+.emenda-scope-note{margin-top:-6px}
 @media(max-width:1100px){.emenda-view .emenda-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.emenda-view .emenda-metrics .value{font-size:28px}}
 @media(max-width:760px){.emenda-field{flex:1;min-width:135px}.emenda-city-field,.emenda-search-field{flex-basis:100%}.emenda-view .emenda-metrics .value{font-size:clamp(20px,5vw,28px)}.emenda-money-value{font-size:clamp(15px,4.2vw,25px)}.emenda-payment-summary{grid-template-columns:1fr}.emenda-payment-summary>div{border-right:0;border-bottom:1px solid var(--line);padding:17px}.emenda-payment-summary>div:last-child{border-bottom:0}.emenda-city-summary{align-items:flex-start;flex-direction:column}.emenda-view .panel-head{flex-wrap:wrap}.emenda-inline-note{margin:16px 16px 4px}.emenda-table-note{padding-left:16px;padding-right:16px}.emenda-ranking td:first-child,.emenda-ranking th:first-child{position:sticky;left:0;z-index:1;background:inherit}.emenda-ranking tr{background:#fff}.emenda-ranking thead tr{background:#fafbfd}}

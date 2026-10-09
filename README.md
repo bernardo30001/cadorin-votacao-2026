@@ -24,6 +24,8 @@ Cada cidade tem um detalhamento com os objetos, números, processos, anos, valor
 
 O cruzamento é descritivo e não atribui os votos às emendas. Os votos preservam o retrato de 5 de outubro de 2026; importar a planilha não atualiza a apuração eleitoral. A aba Fontes e metodologia documenta a importação e suas correções de formato.
 
+**Custo por voto** divide o valor total das emendas exclusivamente atribuídas ao município pelos votos de Cadorin em 2026. Inclui todas as situações de pagamento. A média do recorte é a razão entre as somas, respeitando ano e busca, com os votos de cada cidade com registros contados uma vez. Emendas compartilhadas entram uma vez nessa média apenas quando todas as cidades beneficiárias estão no recorte. Sem rateio, não entram no custo individual. Cidades sem registro não entram no denominador; custo individual com zero votos permanece indisponível. O resumo mostra apenas total destinado e custo médio, com conferências e filtros secundários recolhidos.
+
 Para atualizar a base, execute `python3 scripts/import_emendas.py --help` e informe a nova planilha. O importador usa `openpyxl` para leitura, não altera o arquivo original e gera `dist/emendas.json` e `dist/emendas.js`. O arquivo original não é distribuído no site.
 
 ## Arquivos

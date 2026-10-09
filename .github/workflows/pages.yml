@@ -35,6 +35,7 @@ jobs:
           node --check dist/app.js
           node --check dist/emendas-ui.js
           node --check dist/emendas.js
+          node scripts/test_amendment_cost.cjs
       - name: Preparar site estático
         uses: actions/upload-pages-artifact@v4
         with:
