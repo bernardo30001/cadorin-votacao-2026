@@ -1,0 +1,38 @@
+.emenda-view .emenda-metrics .value{font-size:clamp(22px,2.15vw,34px);letter-spacing:-.8px;overflow-wrap:anywhere}
+.emenda-money-value{display:flex;flex-wrap:wrap;column-gap:.25em;row-gap:.05em;font-size:clamp(18px,1.75vw,30px);line-height:1.25}
+.emenda-money-value>span{white-space:nowrap}
+.emenda-toolbar{align-items:flex-end;border-bottom:0;gap:14px}
+.emenda-field{display:flex;flex-direction:column;gap:5px;min-width:150px}
+.emenda-field label{font-size:12px;color:var(--muted);font-weight:650}
+.emenda-field input,.emenda-field select{width:100%;min-width:0;min-height:43px}
+.emenda-city-field{flex:1.2;min-width:220px}
+.emenda-search-field{flex:1;min-width:190px}
+.emenda-checkbox{display:flex;align-items:center;gap:8px;flex-basis:100%;color:var(--muted);font-size:13px;margin-top:2px}
+.toolbar .emenda-checkbox input{flex:0 0 auto;min-width:18px;width:18px;height:18px;accent-color:var(--orange)}
+.emenda-sort-button{font:inherit;font-weight:650;letter-spacing:inherit;color:inherit;background:transparent;border:0;padding:3px 0;text-align:inherit;min-height:26px}
+.emenda-sort-button:hover{color:var(--orange)}
+.emenda-ranking th[aria-sort="descending"],.emenda-ranking th[aria-sort="ascending"]{color:var(--orange)}
+.emenda-table-note{padding:0 22px 16px;margin-top:0;max-width:1000px}
+.emenda-no-record{font-size:12px;color:var(--muted);font-weight:400}
+.emenda-source{line-height:1.7;max-width:1080px;margin:8px 0 25px}
+.emenda-normalization{margin-top:5px}.emenda-normalization summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}.emenda-normalization p{margin-top:8px;max-width:900px}
+.emenda-value-note{white-space:normal;max-width:190px;margin-left:auto}
+.emenda-status{display:inline-block;padding:4px 8px;border-radius:5px;font-size:11px;font-weight:700;letter-spacing:.2px;white-space:nowrap;border:1px solid transparent}
+.emenda-status-paid{background:#edf6f0;color:#235a45;border-color:#cde1d6}
+.emenda-status-unpaid{background:#f1f3f6;color:#526074;border-color:#dae0e7}
+.emenda-status-partial{background:#fff5df;color:#785619;border-color:#ecdaaf}
+.emenda-payment-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;background:#fff;margin:0 0 22px}
+.emenda-payment-summary>div{padding:20px 23px;border-right:1px solid var(--line)}
+.emenda-payment-summary>div:last-child{border-right:0}
+.emenda-payment-summary strong{display:block;font-size:23px;font-weight:700;letter-spacing:-.5px;margin:10px 0 4px;font-variant-numeric:tabular-nums}
+.emenda-payment-summary small{display:block;color:var(--muted);font-size:12px}
+.emenda-records .emenda-object{white-space:normal;min-width:240px;max-width:550px;line-height:1.6}
+.emenda-records td{vertical-align:top}
+.emenda-shared-cities{white-space:normal;min-width:180px;max-width:250px}
+.emenda-inline-note{margin:18px 22px 4px}
+.emenda-city-summary{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.emenda-city-summary strong{display:block;font-size:27px;letter-spacing:-.7px;margin-top:5px}
+.emenda-city-summary p{margin:5px 0 0}
+.emenda-view .panel-head .text-link{flex-shrink:0}
+@media(max-width:1100px){.emenda-view .emenda-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.emenda-view .emenda-metrics .value{font-size:28px}}
+@media(max-width:760px){.emenda-field{flex:1;min-width:135px}.emenda-city-field,.emenda-search-field{flex-basis:100%}.emenda-view .emenda-metrics .value{font-size:clamp(20px,5vw,28px)}.emenda-money-value{font-size:clamp(15px,4.2vw,25px)}.emenda-payment-summary{grid-template-columns:1fr}.emenda-payment-summary>div{border-right:0;border-bottom:1px solid var(--line);padding:17px}.emenda-payment-summary>div:last-child{border-bottom:0}.emenda-city-summary{align-items:flex-start;flex-direction:column}.emenda-view .panel-head{flex-wrap:wrap}.emenda-inline-note{margin:16px 16px 4px}.emenda-table-note{padding-left:16px;padding-right:16px}.emenda-ranking td:first-child,.emenda-ranking th:first-child{position:sticky;left:0;z-index:1;background:inherit}.emenda-ranking tr{background:#fff}.emenda-ranking thead tr{background:#fafbfd}}

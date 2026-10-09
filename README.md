@@ -16,6 +16,16 @@ Percentual principal = votos do candidato / votos válidos nominais e de legenda
 
 O painel contém dados estáticos, sem atualização automática. As fontes oficiais e relatórios de conferência estão na página Fontes e metodologia.
 
+## Emendas e votos por cidade
+
+A aba [Emendas e votos](https://bernardo30001.github.io/cadorin-votacao-2026/#emendas) cruza os registros da planilha `Emendas.xlsx`, recebida em 9 de outubro de 2026, com a votação municipal de 2026 já publicada. As emendas abrangem 2023–2025. O ranking permite ordenar por valor destinado, valor com situação PAGO, votos, percentual de votos ou município, com filtros por ano e cidade.
+
+Cada cidade tem um detalhamento com os objetos, números, processos, anos, valores e situações das emendas. Valores classificados como PAGO, NÃO PAGO e PAGTO PARCIAL permanecem separados. O valor integral de uma emenda parcialmente paga não é tratado como montante pago. Um registro compartilhado entre Ascurra, Apiúna e Rodeio aparece uma única vez no total geral e separado dos totais municipais, pois a planilha não informa rateio. Ausência de registro na planilha não comprova ausência de destinação.
+
+O cruzamento é descritivo e não atribui os votos às emendas. Os votos preservam o retrato de 5 de outubro de 2026; importar a planilha não atualiza a apuração eleitoral. A aba Fontes e metodologia documenta a importação e suas correções de formato.
+
+Para atualizar a base, execute `python3 scripts/import_emendas.py --help` e informe a nova planilha. O importador usa `openpyxl` para leitura, não altera o arquivo original e gera `dist/emendas.json` e `dist/emendas.js`. O arquivo original não é distribuído no site.
+
 ## Arquivos
 
 `dist/` contém o site autocontido; abrir por servidor HTTP estático. `dist/base-completa.json` contém os dados. `scripts/validate_data.py` reconcilia níveis territoriais e os 295 municípios. Os scripts de leitura e agregação foram preservados para reprodutibilidade; seus insumos são os arquivos oficiais baixados da Justiça Eleitoral.
@@ -25,6 +35,8 @@ O painel contém dados estáticos, sem atualização automática. As fontes ofic
 `python3 scripts/validate_data.py`
 
 `node --check dist/app.js`
+
+`node --check dist/emendas-ui.js`
 
 ## Publicação
 

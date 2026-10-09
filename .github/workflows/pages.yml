@@ -31,7 +31,10 @@ jobs:
         run: |
           test -s dist/index.html
           test -s dist/data.js
+          test -s dist/emendas.js
           node --check dist/app.js
+          node --check dist/emendas-ui.js
+          node --check dist/emendas.js
       - name: Preparar site estático
         uses: actions/upload-pages-artifact@v4
         with:
